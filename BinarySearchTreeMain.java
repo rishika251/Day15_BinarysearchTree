@@ -1,19 +1,30 @@
 package com.bridgelabz.day15;
 
 public class BinarySearchTreeMain {
+	
 	public static void main(String[] args) {
-		System.out.println("Welcome in Binary Search Tree program");
-		BinarySearchTree tree = new BinarySearchTree();
-		// Add node to binary tree
-		tree.insert(56);
-		tree.insert(30);
-		tree.insert(70);
+		
+		 BinaryTree<Integer> myBinaryTree = new BinaryTree();
+	        myBinaryTree.add(56);
+	        myBinaryTree.add(30);
+	        myBinaryTree.add(70);
+	        myBinaryTree.add(56);
+	        myBinaryTree.add(30);
+	        myBinaryTree.add(70);
+	        myBinaryTree.add(22);
+	        myBinaryTree.add(40);
+	        myBinaryTree.add(11);
+	        myBinaryTree.add(3);
+	        myBinaryTree.add(16);
+	        myBinaryTree.add(60);
+	        myBinaryTree.add(95);
+	        myBinaryTree.add(65);
+	        myBinaryTree.add(63);
+	        myBinaryTree.add(67);
+	        int size = myBinaryTree.getSize();
+	        System.out.println( myBinaryTree + "Size is : "+size);
 
-		System.out.println("\nBinary search tree after insertion of element");
+	        System.out.println("Size is : " + size);
 
-		// Display the binary tree
-		tree.inorderDisplay(tree.root);
+	    }
 	}
-
-}
-
